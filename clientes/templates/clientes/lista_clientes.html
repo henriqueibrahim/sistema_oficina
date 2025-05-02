@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>Clientes Cadastrados</h1>
+<!---    <tr class="tabela_clientes">-->
+<!--        {% for cliente in lista_clientes %}-->
+<!--        <td>{{ cliente }}</td>-->
+<!--        {% endfor %}-->
+<!--    </tr>-->
+
+
+        {% for cliente in lista_clientes %}
+        <p>{{ cliente }} </p>
+        {% endfor %}
+
+
+    <a href="{% url 'clientes:homepage' %}">Voltar</a>
+</body>
+</html>
